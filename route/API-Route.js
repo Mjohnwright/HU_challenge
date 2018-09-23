@@ -1,8 +1,6 @@
 // Grabbing our models
 var db = require("../model");
 
-// Routes
-// =============================================================
 module.exports = function(app) {
 
 
