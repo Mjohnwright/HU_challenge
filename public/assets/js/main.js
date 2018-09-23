@@ -5,11 +5,11 @@ $(document).ready(function () {
 
   // Function to start program
   function start() {
-  console.log("clicked");
+  // console.log("clicked");
   
   // Grabs the DOM input value 
   var emailInput = $newItemInput.val();
-  console.log('email output = ', emailInput);
+  // console.log('email output = ', emailInput);
 
   // Validation function launch
   isEmail(emailInput);
@@ -39,7 +39,7 @@ $(document).ready(function () {
   
     $.ajax({
       method: "POST",
-      url:"/email",
+      url:"/api/email",
       data: emailAdd
     })
     $.post("/api/email", emailAdd, function (result) {
